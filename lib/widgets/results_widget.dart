@@ -57,7 +57,7 @@ class ResultsWidget extends StatelessWidget {
               child: Row(
                 children: [
                   SizedBox(
-                    width: screenSize.width / 5,
+                    width: screenSize.width / 6,
                     child: FittedBox(
                       child: RatingStartWidget(rating: product.rating),
                     ),
@@ -69,6 +69,8 @@ class ResultsWidget extends StatelessWidget {
                       style: const TextStyle(
                         color: activeCyanColor,
                       ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                     ),
                   )
                 ],
